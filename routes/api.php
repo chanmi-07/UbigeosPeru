@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DepartmentController;
+use App\Http\Controllers\DistrictController;
 use App\Http\Controllers\ProvinceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,11 @@ use Illuminate\Support\Facades\Route;
 // Departments
 Route::get('/departments', [DepartmentController::class, 'index'])->name('departments.index');
 Route::get('/departments/{codes}', [DepartmentController::class, 'showMultiple'])->name('departments.showMultiple');
+
 // Provinces
 Route::get('/provinces', [ProvinceController::class, 'index'])->name('provinces.index');
 Route::get('/provinces/{codes}', [ProvinceController::class, 'showMultiple'])->name('provinces.showMultiple');
+
+// Districts
+Route::get('/districts', [DistrictController::class, 'index'])->name('districts.index');
+Route::get('/districts/{codes}', [DistrictController::class, 'showMultiple'])->name('districts.showMultiple');
