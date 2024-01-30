@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('provinces', function (Blueprint $table) {
             $table->string('code')->primary();
             $table->string('name');
+            $table->boolean('is_capital')->default(false);
             $table->string('department_code')->constrained('departments');
             $table->timestamps();
         });

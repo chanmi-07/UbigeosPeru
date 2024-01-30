@@ -10,11 +10,24 @@ class DepartmentController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $departments = Department::select('code', 'name')
-        ->orderBy('name', 'asc')
-        ->get();
+        $departments = Department::select('code', 'name');
+        
+        $orderBy = $request->order_by ?? 'name';
+        $order = $request->order ?? 'asc';
+
+        
+        if($request->order_by == 'is_capital')
+        {
+            $orderBy = 'name';
+            $departments->orderBy('is_capital', 'desc');
+        }
+
+        $departments->orderBy($orderBy, $order);
+
+        $departments = $departments->get();
+
 
         foreach ($departments as $department) 
         {

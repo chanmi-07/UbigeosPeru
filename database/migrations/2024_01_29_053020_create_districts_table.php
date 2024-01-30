@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('districts', function (Blueprint $table) {
             $table->string('code')->primary();
             $table->string('name');
+            $table->boolean('is_capital')->default(false);
             $table->string('province_code')->constrained('provinces');
             $table->timestamps();
         });
