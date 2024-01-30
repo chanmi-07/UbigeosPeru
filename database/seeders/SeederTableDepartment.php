@@ -45,7 +45,7 @@ class SeederTableDepartment extends Seeder
         {
             Department::create
             ([
-                'id' => 'D-' . $key + 1,
+                'code' => 'D-' . $key + 1,
                 'name' => $department
             ]);
         }

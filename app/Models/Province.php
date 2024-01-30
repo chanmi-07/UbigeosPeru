@@ -9,15 +9,15 @@ class Province extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id', 'name', 'department_id'];
+    protected $fillable = ['id', 'name', 'department_code'];
 
     public function department()
     {
-        return $this->belongsTo(Department::class);
+        return $this->belongsTo(Department::class, 'department_code', 'code');
     }
 
     public function district()
     {
-        return $this->hasMany(District::class);
+        return $this->hasMany(District::class, 'code');
     }
 }

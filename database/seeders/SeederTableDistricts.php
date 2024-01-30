@@ -3251,9 +3251,9 @@ class SeederTableDistricts extends Seeder
             {
                 District::create
                 ([
-                    'id' => 'D-' . $count,
+                    'code' => 'D-' . $count,
                     'name' => $district,
-                    'province_id' => $province['id']
+                    'province_code' => $province['id']
                 ]);
 
                 $count++;

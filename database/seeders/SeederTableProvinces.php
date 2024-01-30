@@ -387,9 +387,9 @@ class SeederTableProvinces extends Seeder
             {
                 Province::create
                 ([
-                    'id' => 'P-' . $count,
+                    'code' => 'P-' . $count,
                     'name' => $province,
-                    'department_id' => $department['id']
+                    'department_code' => $department['id']
                 ]);
 
                 $count++;

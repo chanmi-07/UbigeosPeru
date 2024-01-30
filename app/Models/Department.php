@@ -11,8 +11,8 @@ class Department extends Model
 
     protected $fillable = ['id', 'name'];
 
-    public function province()
+    public function provinces()
     {
-        return $this->hasMany(Province::class);
+        return $this->hasMany(Province::class, 'code');
     }
 }

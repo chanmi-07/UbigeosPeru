@@ -12,7 +12,20 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        //
+        $departments = Department::select('code', 'name')
+        ->orderBy('name', 'asc')
+        ->get();
+
+        foreach ($departments as $department) 
+        {
+            $department->tag = 
+            [
+                'short' => $department->name,
+                'long' => $department->name . ', Perú',
+            ];
+        }
+
+        return response()->json($departments);
     }
 
     /**
@@ -34,9 +47,27 @@ class DepartmentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Department $department)
+    public function showMultiple($codes)
     {
-        //
+        $codes = explode(',', $codes);
+
+        $departments = Department::select('code', 'name')
+        ->whereIn('code', $codes)
+        ->orderBy('name', 'asc')
+        ->get();
+
+        foreach ($departments as $department) 
+        {
+            $department->tag = 
+            [
+                'short' => $department->name,
+                'long' => $department->name . ', Perú',
+            ];
+        }
+
+        $response = count($departments) > 1 ? $departments : $departments[0];
+
+        return response()->json($response);
     }
 
     /**

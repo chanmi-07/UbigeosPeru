@@ -10,9 +10,26 @@ class ProvinceController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $provinces = Province::select('code', 'name', 'department_code')
+        ->with('department:code,name');
+
+        $request->department && $provinces->where('department_code', $request->department);
+        $provinces = $provinces->orderBy('name', 'asc')->get();
+
+        foreach ($provinces as $province) 
+        {
+            $province->tag = 
+            [
+                'short' => $province->name . ', ' . $province->department->name,
+                'long' => $province->name . ', ' . $province->department->name . ', Perú',
+            ];
+
+            unset($province->department);
+        }
+
+        return response()->json($provinces);
     }
 
     /**
@@ -34,9 +51,29 @@ class ProvinceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Province $province)
+    public function showMultiple($codes)
     {
-        //
+        $codes = explode(',', $codes);
+
+        $provinces = Province::select('code', 'name', 'department_code')
+        ->with('department:code,name')
+        ->whereIn('code', $codes)
+        ->get();
+
+        foreach ($provinces as $province) 
+        {
+            $province->tag = 
+            [
+                'short' => $province->name . ', ' . $province->department->name,
+                'long' => $province->name . ', ' . $province->department->name . ', Perú',
+            ];
+
+            unset($province->department);
+        }
+
+        $response = count($provinces) > 1 ? $provinces : $provinces[0];
+
+        return response()->json($response);
     }
 
     /**
