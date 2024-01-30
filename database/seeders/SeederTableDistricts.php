@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\District;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -1898,8 +1899,1365 @@ class SeederTableDistricts extends Seeder
                     'Río Tambo',
                     'Satipo'
                 ]
+            ],
+            // junin Tarma
+            [
+                'id' => 'P-110',
+                'districts' => 
+                [
+                    'Acobamba',
+                    'Huaricolca',
+                    'Huasahuasi',
+                    'La Unión',
+                    'Palca',
+                    'Palcamayo',
+                    'San Pedro de Cajas',   
+                    'Tapo',
+                    'Tarma'
+                ]
+            ],
+            // junin Yauli
+            [
+                'id' => 'P-111',
+                'districts' => 
+                [
+                    'Chacapalpa',
+                    'Huay-Huay',
+                    'La Oroya',
+                    'Marcapomacocha',
+                    'Morococha',
+                    'Paccha',
+                    'Santa Barbara de Carhuacayan',
+                    'Santa Rosa de Sacco',
+                    'Suitucancha',
+                    'Yauli'
+                ]
+            ],
+            // la libertad Ascope
+            [
+                'id' => 'P-112',
+                'districts' => 
+                [
+                    'Ascope',
+                    'Casa Grande',
+                    'Chicama',
+                    'Chocope',
+                    'Magdalena de Cao',
+                    'Paiján',
+                    'Rázuri',
+                    'Santiago de Cao'
+                ]
+            ],
+            // la libertad Bolívar
+            [
+                'id' => 'P-113',
+                'districts' => 
+                [
+                    'Bambamarca',
+                    'Bolívar',
+                    'Condormarca',
+                    'Longotea',
+                    'Uchumarca',
+                    'Ucuncha'
+                ]
+            ],
+            // la libertad Chepén
+            [
+                'id' => 'P-114',
+                'districts' => 
+                [
+                    'Chepén',
+                    'Pacanga',
+                    'Pueblo Nuevo'
+                ]
+            ],
+            // la libertad Gran Chimú
+            [
+                'id' => 'P-115',
+                'districts' => 
+                [
+                    'Cascas',
+                    'Lucma',
+                    'Marmot',
+                    'Sayapullo'
+                ]
+            ],
+            // la libertad Julcán
+            [
+                'id' => 'P-116',
+                'districts' => 
+                [
+                    'Calamarca',
+                    'Carabamba',
+                    'Huaso',
+                    'Julcán'
+                ]
+            ],
+            // la libertad Otuzco
+            [
+                'id' => 'P-117',
+                'districts' => 
+                [
+                    'Agallpampa',
+                    'Charat',
+                    'Huaranchal',
+                    'La Cuesta',
+                    'Mache',
+                    'Otuzco',
+                    'Paranday',
+                    'Salpo',
+                    'Sinsicap',
+                    'Usquil'
+                ]
+            ],
+            // la libertad Pacasmayo
+            [
+                'id' => 'P-118',
+                'districts' => 
+                [
+                    'Guadalupe',
+                    'Jequetepeque',
+                    'Pacasmayo',
+                    'San José',
+                    'San Pedro de Lloc'
+                ]
+            ],
+            // la libertad Pataz
+            [
+                'id' => 'P-119',
+                'districts' => 
+                [
+                    'Buldibuyo',
+                    'Chillia',
+                    'Huancaspata',
+                    'Huaylillas',
+                    'Huayo',
+                    'Ongón',
+                    'Parcoy',
+                    'Pataz',
+                    'Pias',
+                    'Santiago de Challas',
+                    'Taurija',
+                    'Tayabamba',
+                    'Urpay'
+                ]
+            ],
+            // la libertad Sánchez Carrión
+            [
+                'id' => 'P-120',
+                'districts' => 
+                [
+                    'Chugay',
+                    'Cochorco',
+                    'Curgos',
+                    'Huamachuco',
+                    'Marcabal',
+                    'Sanagorán',
+                    'Sarin',
+                    'Sartimbamba'
+                ]
+            ],
+            // la libertad Santiago de Chuco
+            [
+                'id' => 'P-121',
+                'districts' => 
+                [
+                    'Angasmarca',
+                    'Cachicadán',
+                    'Mollebamba',
+                    'Mollepata',
+                    'Quiruvilca',
+                    'Santa Cruz de Chuca',
+                    'Santiago de Chuco',
+                    'Sitabamba'
+                ]
+            ],
+            // la libertad Trujillo
+            [
+                'id' => 'P-122',
+                'districts' => 
+                [
+                    'El Porvenir',
+                    'Florencia de Mora',
+                    'Huanchaco',
+                    'La Esperanza',
+                    'Laredo',
+                    'Moche',
+                    'Poroto',
+                    'Salaverry',
+                    'Simbal',
+                    'Trujillo',
+                    'Victor Larco Herrera'
+                ]
+            ],
+            // la libertad Viru
+            [
+                'id' => 'P-123',
+                'districts' => 
+                [
+                    'Chao',
+                    'Guadalupito',
+                    'Virú'
+                ]
+            ],
+            // lambayeque Chiclayo
+            [
+                'id' => 'P-124',
+                'districts' => 
+                [
+                    'Cayaltí',
+                    'Chiclayo',
+                    'Chongoyape',
+                    'Eten',
+                    'Eten Puerto',
+                    'José Leonardo Ortiz',
+                    'La Victoria',
+                    'Lagunas',
+                    'Monsefú',
+                    'Nueva Arica',
+                    'Oyotún',
+                    'Pátapo',
+                    'Picsi',
+                    'Pimentel',
+                    'Reque',
+                    'Santa Rosa',
+                    'Saña',
+                    'Pomalca',
+                    'Pucalá',
+                    'Tumán'
+                ]
+            ],
+            // lambayeque Ferreñafe
+            [
+                'id' => 'P-125',
+                'districts' => 
+                [
+                    'Cañaris',
+                    'Ferreñafe',
+                    'Incahuasi',
+                    'Manuel Antonio Mesones Muro',
+                    'Pítipo',
+                    'Pueblo Nuevo'
+                ]
+            ],
+            // lambayeque Lambayeque
+            [
+                'id' => 'P-126',
+                'districts' => 
+                [
+                    'Chochope',
+                    'Illimo',
+                    'Jayanca',
+                    'Lambayeque',
+                    'Mochumí',
+                    'Morrope',
+                    'Motupe',
+                    'Olmos',
+                    'Pacora',
+                    'Salas',
+                    'San José',
+                    'Túcume'
+                ]
+            ],
+            // lima Barranca
+            [
+                'id' => 'P-127',
+                'districts' => 
+                [
+                    'Barranca',
+                    'Paramonga',
+                    'Pativilca',
+                    'Supe',
+                    'Supe Puerto'
+                ]
+            ],
+            // lima Cajatambo
+            [
+                'id' => 'P-128',
+                'districts' => 
+                [
+                    'Cajatambo',
+                    'Copa',
+                    'Gorgor',
+                    'Huancapon',
+                    'Manas',
+                    'Cahuapampa'
+                ]
+            ],
+            // lima Callao
+            [
+                'id' => 'P-129',
+                'districts' => 
+                [
+                    'Bellavista',
+                    'Callao',
+                    'Carmen de la Legua Reynoso',
+                    'La Perla',
+                    'La Punta',
+                    'Mi Perú',
+                    'Ventanilla'
+                ]
+            ],
+            // lima Canta
+            [
+                'id' => 'P-130',
+                'districts' => 
+                [
+                    'Arahuay',
+                    'Canta',
+                    'Huamantanga',
+                    'Huaros',
+                    'Lachaqui',
+                    'San Buenaventura',
+                    'Santa Rosa de Quives'
+                ]
+            ],
+            // lima Cañete
+            [
+                'id' => 'P-131',
+                'districts' => 
+                [
+                    'Asia',
+                    'Calango',
+                    'Cerro Azul',
+                    'Chilca',
+                    'Coayllo',
+                    'Imperial',
+                    'Lunahuaná',
+                    'Mala',
+                    'Nuevo Imperial',
+                    'Pacarán',
+                    'Quilmaná',
+                    'San Antonio',
+                    'San Luis',
+                    'San Vicente de Cañete',
+                    'Santa Cruz de Flores',
+                    'Zúñiga'
+                ]
+            ],
+            // lima Huaral
+            [
+                'id' => 'P-132',
+                'districts' => 
+                [
+                    'Atavillos Alto',
+                    'Atavillos Bajo',
+                    'Aucallama',
+                    'Chancay',
+                    'Huaral',
+                    'Ihuari',
+                    'Lampian',
+                    'Pacaraos',
+                    'San Miguel de Acos',
+                    'Santa Cruz de Andamarca',
+                    'Sumbilca',
+                    'Veintisiete de Noviembre'
+                ]
+            ],
+            // lima Huarochirí
+            [
+                'id' => 'P-133',
+                'districts' => 
+                [
+                    'Antioquía',
+                    'Callahuanca',
+                    'Carampoma',
+                    'Chicla',
+                    'Cuenca',
+                    'Huachupampa',
+                    'Huanza',
+                    'Huarochirí',
+                    'Lahuaytambo',
+                    'Langa',
+                    'Laraos',
+                    'Mariatana',
+                    'Matucana',
+                    'Ricardo Palma',
+                    'San Andrés de Tupicocha',
+                    'San Antonio',
+                    'San Bartolomé',
+                    'San Damián',
+                    'San Juan de Iris',
+                    'San Juan de Tantaranche',
+                    'San Lorenzo de Quinti',
+                    'San Mateo',
+                    'San Mateo de Otao',
+                    'San Pedro de Casta',
+                    'San Pedro de Huancayre',
+                    'Sangallaya',
+                    'Santa Cruz de Cocachacra',
+                    'Santa Eulalia',
+                    'Santiago de Anchucaya',
+                    'Santiago de Tuna',
+                    'Santo Domingo de los Olleros',
+                    'Surco'
+                ]
+            ],
+            // lima Huaura
+            [
+                'id' => 'P-134',
+                'districts' => 
+                [
+                    'Ámbar',
+                    'Caleta de Carquín',
+                    'Checras',
+                    'Huacho',
+                    'Hualmay',
+                    'Huaura',
+                    'Leoncio Prado',
+                    'Paccho',
+                    'Santa Leonor',
+                    'Santa María',
+                    'Sayan',
+                    'Végueta'
+                ]
+            ],
+            // lima Lima
+            [
+                'id' => 'P-135',
+                'districts' => 
+                [
+                    'Ancón',
+                    'Ate',
+                    'Barranco',
+                    'Breña',
+                    'Carabayllo',
+                    'Chaclacayo',
+                    'Chorrillos',
+                    'Cieneguilla',
+                    'Comas',
+                    'El Agustino',
+                    'Huaycán',
+                    'Independencia',
+                    'Jesús María',
+                    'La Molina',
+                    'La Victoria',
+                    'Lima',
+                    'Lince',
+                    'Los Olivos',
+                    'Lurigancho-Chosica',
+                    'Lurín',
+                    'Magdalena del Mar',
+                    'Miraflores',
+                    'Pachacamac',
+                    'Pucusana',
+                    'Pueblo Libre',
+                    'Puente Piedra',
+                    'Punta Hermosa',
+                    'Punta Negra',
+                    'Rímac',
+                    'San Bartolo',
+                    'San Borja',
+                    'San Isidro',
+                    'San Juan de Lurigancho',
+                    'San Juan de Miraflores',
+                    'San Luis',
+                    'San Martín de Porres',
+                    'San Miguel',
+                    'Santa Anita',
+                    'Santa María del Mar',
+                    'Santa Rosa',
+                    'Santiago de Surco',
+                    'Surquillo',
+                    'Villa El Salvador',
+                    'Villa María del Triunfo'
+                ]
+            ],
+            // lima Oyón
+            [
+                'id' => 'P-136',
+                'districts' => 
+                [
+                    'Andajes',
+                    'Caujul',
+                    'Cochamarca',
+                    'Naván',
+                    'Oyón',
+                    'Pachangara'
+                ]
+            ],
+            // lima Yauyos
+            [
+                'id' => 'P-137',
+                'districts' => 
+                [
+                    'Alis',
+                    'Allauca',
+                    'Ayaviri',
+                    'Azángaro',
+                    'Cacra',
+                    'Carania',
+                    'Catahuasi',
+                    'Chocos',
+                    'Cochas',
+                    'Colonia',
+                    'Hongos',
+                    'Huampara',
+                    'Huancaya',
+                    'Huangáscar',
+                    'Huantán',
+                    'Huañec',
+                    'Laraos',
+                    'Lincha',
+                    'Madeán',
+                    'Miraflores',
+                    'Omas',
+                    'Putinza',
+                    'Quinches',
+                    'Quinocay',
+                    'San Joaquín',
+                    'San Pedro de Pilas',
+                    'Tanta',
+                    'Tauripampa',
+                    'Tomas',
+                    'Tupe',
+                    'Viñac',
+                    'Vitis',
+                    'Yauyos'
+                ]
+            ],
+            // loreto Alto Amazonas
+            [
+                'id' => 'P-138',
+                'districts' => 
+                [
+                    'Barranca',
+                    'Cahuapanas',
+                    'Jeberos',
+                    'Lagunas',
+                    'Manseriche',
+                    'Morona',
+                    'Pastaza',
+                    'Santa Cruz',
+                    'Teniente Cesar López Rojas',
+                    'Yurimaguas'
+                ]
+            ],
+            // loreto Datem del Marañón
+            [
+                'id' => 'P-139',
+                'districts' => 
+                [
+                    'Andoas',
+                    'Barranca',
+                    'Cahuapanas',
+                    'Jeberos',
+                    'Lagunas',
+                    'Manseriche',
+                    'Morona',
+                    'Pastaza',
+                    'Santa Cruz',
+                    'Teniente Cesar López Rojas',
+                    'Yurimaguas'
+                ]
+            ],
+            // loreto Loreto
+            [
+                'id' => 'P-140',
+                'districts' => 
+                [
+                    'Nauta',
+                    'Parinari',
+                    'Tigre',
+                    'Trompeteros',
+                    'Urarinas'
+                ]
+            ],
+            // loreto Mariscal Ramón Castilla
+            [
+                'id' => 'P-141',
+                'districts' => 
+                [
+                    'Pebas',
+                    'Ramon Castilla',
+                    'San Pablo',
+                    'Yavari'
+                ]
+            ],
+            // loreto Maynas
+            [
+                'id' => 'P-142',
+                'districts' => 
+                [
+                    'Alto Nanay',
+                    'Belén',
+                    'Fernando Lores',
+                    'Indiana',
+                    'Iquitos',
+                    'Las Amazonas',
+                    'Mazán',
+                    'Napo',
+                    'Punchana',
+                    'San Juan Bautista',
+                    'Torres Causana',
+                ]
+            ],
+            // loreto Requena
+            [
+                'id' => 'P-143',
+                'districts' => 
+                [
+                    'Alto Tapiche',
+                    'Capelo',
+                    'Emilio San Martín',
+                    'Maquía',
+                    'Puinahua',
+                    'Requena',
+                    'Saquena',
+                    'Soplin',
+                    'Tapiche',
+                    'Jenaro Herrera',
+                    'Yaquerana'
+                ]
+            ],
+            // loreto Ucayali
+            [
+                'id' => 'P-144',
+                'districts' => 
+                [
+                    'Contamana',
+                    'Inahuaya',
+                    'Padre Márquez',
+                    'Pampa Hermosa',
+                    'Sarayacu',
+                    'Vargas Guerra'
+                ]
+            ],
+            // madre de dios Manu
+            [
+                'id' => 'P-145',
+                'districts' => 
+                [
+                    'Fitzcarrald',
+                    'Huepetuhe',
+                    'Madre de Dios',
+                    'Manu'
+                ]
+            ],
+            // madre de dios Tahuamanu
+            [
+                'id' => 'P-146',
+                'districts' => 
+                [
+                    'Iberia',
+                    'Iñapari',
+                    'Tahuamanu'
+                ]
+            ],
+            // madre de dios Tambopata
+            [
+                'id' => 'P-147',
+                'districts' => 
+                [
+                    'Inambari',
+                    'Laberinto',
+                    'Las Piedras',
+                    'Tambopata'
+                ]
+            ],
+            // moquegua General Sánchez Cerro
+            [
+                'id' => 'P-148',
+                'districts' => 
+                [
+                    'Chojata',
+                    'Coalaque',
+                    'Ichuña',
+                    'La Capilla',
+                    'Lloque',
+                    'Matalaque',
+                    'Omate',
+                    'Puquina',
+                    'Quinistaquillas',
+                    'Ubinas',
+                    'Yunga'
+                ]
+            ],
+            // moquegua Ilo
+            [
+                'id' => 'P-149',
+                'districts' => 
+                [
+                    'El Algarrobal',
+                    'Ilo',
+                    'Pacocha'
+                ]
+            ],
+            // moquegua Mariscal Nieto
+            [
+                'id' => 'P-150',
+                'districts' => 
+                [
+                    'Carumas',
+                    'Cuchumbaya',
+                    'Moquegua',
+                    'Samegua',
+                    'San Cristóbal',
+                    'Torata'
+                ]
+            ],
+            // pasco Daniel Alcides Carrión
+            [
+                'id' => 'P-151',
+                'districts' => 
+                [
+                    'Chacayán',
+                    'Goyllarisquizga',
+                    'Paucar',
+                    'San Pedro de Pillao',
+                    'Santa Ana de Tusi',
+                    'Tapuc',
+                    'Vilcabamba',
+                    'Yanahuanca'
+                ]
+            ],
+            // pasco Oxapampa
+            [
+                'id' => 'P-152',
+                'districts' => 
+                [
+                    'Chontabamba',
+                    'Huancabamba',
+                    'Oxapampa',
+                    'Palcazu',
+                    'Pozuzo',
+                    'Puerto Bermúdez',
+                    'Villa Rica'
+                ]
+            ],
+            // pasco Pasco
+            [
+                'id' => 'P-153',
+                'districts' => 
+                [
+                    'Chaupimarca',
+                    'Huachón',
+                    'Huariaca',
+                    'Huayllay',
+                    'Ninacaca',
+                    'Pallanchacra',
+                    'Paucartambo',
+                    'San Francisco de Asís de Yarusyacán',
+                    'Simón Bolívar',
+                    'Ticlacayán',
+                    'Tinyahuarco',
+                    'Vicco',
+                    'Yanacancha'
+                ]
+            ],
+            // piura Ayabaca
+            [
+                'id' => 'P-154',
+                'districts' => 
+                [
+                    'Ayabaca',
+                    'Frias',
+                    'Jilili',
+                    'Lagunas',
+                    'Montero',
+                    'Pacaipampa',
+                    'Paimas',
+                    'Sapillica',
+                    'Sicchez',
+                    'Suyo'
+                ]
+            ],
+            // piura Huancabamba
+            [
+                'id' => 'P-155',
+                'districts' => 
+                [
+                    'Canchaque',
+                    'El Carmen de la Frontera',
+                    'Huancabamba',
+                    'Huarmaca',
+                    'Lalaquiz',
+                    'San Miguel de El Faique',
+                    'Sondor',
+                    'Sondorillo'
+                ]
+            ],
+            // piura Morropón
+            [
+                'id' => 'P-156',
+                'districts' => 
+                [
+                    'Buenos Aires',
+                    'Chalaco',
+                    'Chulucanas',
+                    'La Matanza',
+                    'Morropón',
+                    'Salitral',
+                    'San Juan de Bigote',
+                    'Santa Catalina de Mossa',
+                    'Santo Domingo',
+                    'Yamango'
+                ]
+            ],
+            // piura Paita
+            [
+                'id' => 'P-157',
+                'districts' => 
+                [
+                    'Amotape',
+                    'Arenal',
+                    'Colán',
+                    'La Huaca',
+                    'Paita',
+                    'Tamarindo',
+                    'Vichayal'
+                ]
+            ],
+            // piura Piura
+            [
+                'id' => 'P-158',
+                'districts' => 
+                [
+                    'Castilla',
+                    'Catacaos',
+                    'Cura Mori',
+                    'El Tallán',
+                    'La Arena',
+                    'La Unión',
+                    'Las Lomas',
+                    'Piura',
+                    'Tambo Grande'
+                ]
+            ],
+            // piura Sechura
+            [
+                'id' => 'P-159',
+                'districts' => 
+                [
+                    'Bellavista de la Unión',
+                    'Bernal',
+                    'Cristo Nos Valga',
+                    'Rinconada Llicuar',
+                    'Sechura',
+                    'Vice'
+                ]
+            ],
+            // piura Sullana
+            [
+                'id' => 'P-160',
+                'districts' => 
+                [
+                    'Bellavista',
+                    'Ignacio Escudero',
+                    'Lancones',
+                    'Marcavelica',
+                    'Miguel Checa',
+                    'Querecotillo',
+                    'Salitral',
+                    'Sullana'
+                ]
+            ],
+            // piura Talara
+            [
+                'id' => 'P-161',
+                'districts' => 
+                [
+                    'El Alto',
+                    'La Brea',
+                    'Lobitos',
+                    'Los Órganos',
+                    'Máncora',
+                    'Pariñas',
+                ]
+            ],
+            // puno Azángaro
+            [
+                'id' => 'P-162',
+                'districts' => 
+                [
+                    'Achaya',
+                    'Arapa',
+                    'Asillo',
+                    'Azángaro',
+                    'Caminaca',
+                    'Chupa',
+                    'José Domingo Choquehuanca',
+                    'Muñani',
+                    'Potoni',
+                    'Saman',
+                    'San Antón',
+                    'San José',
+                    'San Juan de Salinas',
+                    'Santiago de Pupuja',
+                    'Tirapata'
+                ]
+            ],
+            // puno Carabaya
+            [
+                'id' => 'P-163',
+                'districts' => 
+                [
+                    'Ajoyani',
+                    'Ayapata',
+                    'Coasa',
+                    'Corani',
+                    'Crucero',
+                    'Ituata',
+                    'Macusani',
+                    'Ollachea',
+                    'San Gabán',
+                    'Usicayos'
+                ]
+            ],
+            // puno Chucuito
+            [
+                'id' => 'P-164',
+                'districts' => 
+                [
+                    'Desaguadero',
+                    'Huacullani',
+                    'Juli',
+                    'Kelluyo',
+                    'Pisacoma',
+                    'Pomata',
+                    'Zepita'
+                ]
+            ],
+            // puno El Collao
+            [
+                'id' => 'P-165',
+                'districts' => 
+                [
+                    'Capazo',
+                    'Conduriri',
+                    'Ilave',
+                    'Pilcuyo',
+                    'Santa Rosa'
+                ]
+            ],
+            // puno Huancané
+            [
+                'id' => 'P-166',
+                'districts' => 
+                [
+                    'Cojata',
+                    'Huancané',
+                    'Huatasani',
+                    'Inchupalla',
+                    'Pusi',
+                    'Rosaspata',
+                    'Taraco',
+                    'Vilque Chico'
+                ]
+            ],
+            // puno Lampa
+            [
+                'id' => 'P-167',
+                'districts' => 
+                [
+                    'Cabanilla',
+                    'Calapuja',
+                    'Lampa',
+                    'Nicasio',
+                    'Ocuviri',
+                    'Palca',
+                    'Paratia',
+                    'Pucará',
+                    'Santa Lucía',
+                    'Vilavila'
+                ]
+            ],
+            // puno Melgar
+            [
+                'id' => 'P-168',
+                'districts' => 
+                [
+                    'Antauta',
+                    'Ayaviri',
+                    'Cupi',
+                    'Llalli',
+                    'Macari',
+                    'Nuñoa',
+                    'Orurillo',
+                    'Santa Rosa',
+                    'Umachiri'
+                ]
+            ],
+            // puno Moho
+            [
+                'id' => 'P-169',
+                'districts' => 
+                [
+                    'Conima',
+                    'Huayrapata',
+                    'Moho',
+                    'Tilali'
+                ]
+            ],
+            // puno Puno
+            [
+                'id' => 'P-170',
+                'districts' => 
+                [
+                    'Acora',
+                    'Amantani',
+                    'Atuncolla',
+                    'Capachica',
+                    'Chucuito',
+                    'Coata',
+                    'Huata',
+                    'Mañazo',
+                    'Paucarcolla',
+                    'Pichacani',
+                    'Plateria',
+                    'San Antonio',
+                    'Tiquillaca',
+                    'Vilque'
+                ]
+            ],
+            // puno San Antonio de Putina
+            [
+                'id' => 'P-171',
+                'districts' => 
+                [
+                    'Ananea',
+                    'Pedro Vilca Apaza',
+                    'Putina',
+                    'Quilcapuncu',
+                    'Sina'
+                ]
+            ],
+            // puno San Román
+            [
+                'id' => 'P-172',
+                'districts' => 
+                [
+                    'Cabana',
+                    'Cabanillas',
+                    'Caracoto',
+                    'Juliaca',
+                    'San Miguel'
+                ]
+            ],
+            // puno Sandia
+            [
+                'id' => 'P-173',
+                'districts' => 
+                [
+                    'Alto Inambari',
+                    'Cuyocuyo',
+                    'Limbani',
+                    'Patambuco',
+                    'Phara',
+                    'Quiaca',
+                    'San Juan del Oro',
+                    'Sandia',
+                    'Yanahuaya'
+                ]
+            ],
+            // puno Yunguyo
+            [
+                'id' => 'P-174',
+                'districts' => 
+                [
+                    'Anapia',
+                    'Copani',
+                    'Cuturapi',
+                    'Ollaraya',
+                    'Tinicachi',
+                    'Unicachi',
+                    'Yunguyo'
+                ]
+            ],
+            // san martín Bellavista
+            [
+                'id' => 'P-175',
+                'districts' => 
+                [
+                    'Alto Biavo',
+                    'Bajo Biavo',
+                    'Bellavista',
+                    'Huallaga',
+                    'San Pablo',
+                    'San Rafael'
+                ]
+            ],
+            // san martín El Dorado
+            [
+                'id' => 'P-176',
+                'districts' => 
+                [
+                    'Agua Blanca',
+                    'San José de Sisa',
+                    'San Martín',
+                    'Santa Rosa',
+                    'Shatoja'
+                ]
+            ],
+            // san martín Huallaga
+            [
+                'id' => 'P-177',
+                'districts' => 
+                [
+                    'Alto Saposoa',
+                    'El Eslabón',   
+                    'Piscoyacu',
+                    'Sacanche',
+                    'Saposoa',
+                    'Tingo de Saposoa'
+                ]
+            ],
+            // san martín Lamas
+            [
+                'id' => 'P-178',
+                'districts' => 
+                [
+                    'Alonso de Alvarado',
+                    'Barranquita',
+                    'Caynarachi',
+                    'Cuñumbuqui',
+                    'Lamas',
+                    'Pinto Recodo',
+                    'Rumisapa',
+                    'San Roque de Cumbaza',
+                    'Shanao',
+                    'Tabalosos',
+                    'Zapatero'
+                ]
+            ],
+            // san martín Mariscal Cáceres
+            [
+                'id' => 'P-179',
+                'districts' => 
+                [
+                    'Campanilla',
+                    'Huicungo',
+                    'Juanjuí',
+                    'Pachiza',
+                    'Pajarillo'
+                ]
+            ],
+            // san martín Moyobamba
+            [
+                'id' => 'P-180',
+                'districts' => 
+                [
+                    'Calzada',
+                    'Habana',
+                    'Jepelacio',
+                    'Moyobamba',
+                    'Soritor',
+                    'Yantalo'
+                ]
+            ],
+            // san martín Picota
+            [
+                'id' => 'P-181',
+                'districts' => 
+                [
+                    'Buenos Aires',
+                    'Caspisapa',
+                    'Picota',
+                    'Pilluana',
+                    'Pucacaca',
+                    'San Cristóbal',
+                    'San Hilarión',
+                    'Shamboyacu',
+                    'Tingo de Ponasa',
+                    'Tres Unidos'
+                ]
+            ],
+            // san martín Rioja
+            [
+                'id' => 'P-182',
+                'districts' => 
+                [
+                    'Awajún',
+                    'Elias Soplin Vargas',
+                    'Nueva Cajamarca',
+                    'Pardo Miguel',
+                    'Posic',
+                    'Rioja',
+                    'San Fernando',
+                    'Yorongos',
+                    'Yuracyacu'
+                ]
+            ],
+            // san martín San Martín
+            [
+                'id' => 'P-183',
+                'districts' => 
+                [
+                    'Alberto Leveau',
+                    'Cacatachi',
+                    'Chazuta',
+                    'Chipurana',
+                    'El Porvenir',
+                    'Huimbayoc',
+                    'Juan Guerra',
+                    'La Banda de Shilcayo',
+                    'Morales',
+                    'Papaplaya',
+                    'San Antonio',
+                    'Sauce',
+                    'Shapaja',
+                    'Tarapoto'
+                ]
+            ],
+            // san martín Tocache
+            [
+                'id' => 'P-184',
+                'districts' => 
+                [
+                    'Nuevo Progreso',
+                    'Pólvora',
+                    'Shunte',
+                    'Tocache',
+                    'Uchiza'
+                ]
+            ],
+            // tacna Candarave
+            [
+                'id' => 'P-185',
+                'districts' => 
+                [
+                    'Cairani',
+                    'Camilaca',
+                    'Candarave',
+                    'Curibaya',
+                    'Huanuara',
+                    'Quilahuani'
+                ]
+            ],
+            // tacna Jorge Basadre
+            [
+                'id' => 'P-186',
+                'districts' => 
+                [
+                    'Ilabaya',
+                    'Ite',
+                    'Locumba'
+                ]
+            ],
+            // tacna Tacna
+            [
+                'id' => 'P-187',
+                'districts' => 
+                [
+                    'Alto de la Alianza',
+                    'Calana',
+                    'Ciudad Nueva',
+                    'Inclán',
+                    'Pachía',
+                    'Palca',
+                    'Pocollay',
+                    'Sama',
+                    'Tacna'
+                ]
+            ],
+            // tacna Tarata
+            [
+                'id' => 'P-188',
+                'districts' => 
+                [
+                    'Estique',
+                    'Estique-Pampa',
+                    'Héroes Albarracín',
+                    'Sitajara',
+                    'Susapaya',
+                    'Tarata',
+                    'Tarucachi',
+                    'Ticaco'
+                ]
+            ],
+            // tumbes Contralmirante Villar
+            [
+                'id' => 'P-189',
+                'districts' => 
+                [
+                    'Casitas',
+                    'Zorritos'
+                ]
+            ],
+            // tumbes Tumbes
+            [
+                'id' => 'P-190',
+                'districts' => 
+                [
+                    'Corrales',
+                    'La Cruz',
+                    'Pampas de Hospital',
+                    'San Jacinto',
+                    'San Juan de la Virgen',
+                    'Tumbes'
+                ]
+            ],
+            // tumbes Zarumilla
+            [
+                'id' => 'P-191',
+                'districts' => 
+                [
+                    'Aguas Verdes',
+                    'Matapalo',
+                    'Papayal',
+                    'Zarumilla'
+                ]
+            ],
+            // ucayali Atalaya
+            [
+                'id' => 'P-192',
+                'districts' => 
+                [
+                    'Raymondi',
+                    'Sepahua',
+                    'Tahuania',
+                    'Yurúa'
+                ]
+            ],
+            // ucayali Coronel Portillo
+            [
+                'id' => 'P-193',
+                'districts' => 
+                [
+                    'Calleria',
+                    'Campoverde',
+                    'Iparía',
+                    'Masisea',
+                    'Nueva Requena',
+                    'Yarinacocha'
+                ]
+            ],
+            // ucayali Padre Abad
+            [
+                'id' => 'P-194',
+                'districts' => 
+                [
+                    'Alexander Von Humboldt',
+                    'Curimaná',
+                    'Irázola',
+                    'Neshuya',
+                    'Padre Abad'
+                ]
+            ],
+            // ucayali Purús
+            [
+                'id' => 'P-195',
+                'districts' => 
+                [
+                    'Purús'
+                ]
             ]
-            
         ];
+
+        $count = 1;
+        foreach ($provinces as $province) 
+        {
+            foreach ($province['districts'] as $district) 
+            {
+                District::create
+                ([
+                    'id' => 'D-' . $count,
+                    'name' => $district,
+                    'province_id' => $province['id']
+                ]);
+
+                $count++;
+            }
+        }
     }
 }

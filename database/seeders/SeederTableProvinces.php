@@ -239,6 +239,7 @@ class SeederTableProvinces extends Seeder
                 [
                     "Barranca",
                     "Cajatambo",
+                    "Callao",
                     "Canta",
                     "Cañete",
                     "Huaral",
@@ -255,6 +256,7 @@ class SeederTableProvinces extends Seeder
                 "provinces" =>
                 [
                     "Alto Amazonas",
+                    "Datem del Marañón",
                     "Loreto",
                     "Mariscal Ramón Castilla",
                     "Maynas",
