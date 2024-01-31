@@ -16,7 +16,20 @@ class ProvinceController extends Controller
         ->with('department:code,name');
 
         $request->department && $provinces->where('department_code', $request->department);
-        $provinces = $provinces->orderBy('name', 'asc')->get();
+        
+        // orderBy
+        $orderBy = $request->order_by ?? 'name';
+        $order = $request->order ?? 'asc';
+
+        if($request->order_by == 'is_capital')
+        {
+            $orderBy = 'name';
+            $provinces->orderBy('is_capital', 'desc');
+        }
+
+        $provinces->orderBy($orderBy, $order);
+
+        $provinces = $provinces->get();
 
         foreach ($provinces as $province) 
         {

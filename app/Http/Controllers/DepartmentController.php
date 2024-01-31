@@ -14,10 +14,10 @@ class DepartmentController extends Controller
     {
         $departments = Department::select('code', 'name');
         
+        // orderBy
         $orderBy = $request->order_by ?? 'name';
         $order = $request->order ?? 'asc';
 
-        
         if($request->order_by == 'is_capital')
         {
             $orderBy = 'name';
@@ -27,7 +27,6 @@ class DepartmentController extends Controller
         $departments->orderBy($orderBy, $order);
 
         $departments = $departments->get();
-
 
         foreach ($departments as $department) 
         {
