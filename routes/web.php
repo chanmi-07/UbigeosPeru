@@ -15,15 +15,18 @@
 
 $router->group(['prefix' => 'api'], function () use ($router)
 {
+    // main
+    $router->get('/', ['as'=> 'home','uses'=> 'HomeController@index']);
+
     // Departments
-    $router->get('departments', 'DepartmentController@index');
-    $router->get('departments/{codes}', 'DepartmentController@showMultiple');
+    $router->get('departments', ['as' => 'departments.index', 'uses' => 'DepartmentController@index']);
+    $router->get('departments/{codes}', ['as'  => 'departments.show', 'uses' => 'DepartmentController@showMultiple']);
 
     // Provinces
-    $router->get('provinces', 'ProvinceController@index');
-    $router->get('provinces/{codes}', 'ProvinceController@showMultiple');
+    $router->get('provinces', ['as' => 'provinces.index', 'uses'=> 'ProvinceController@index']);
+    $router->get('provinces/{codes}', ['as'=> 'provinces.show', 'uses'=> 'ProvinceController@showMultiple']);
 
     // Districts
-    $router->get('districts', 'DistrictController@index');
-    $router->get('districts/{codes}', 'DistrictController@showMultiple');
+    $router->get('districts', ['as' => 'districts.index', 'uses'=> 'DistrictController@index']);
+    $router->get('districts/{codes}', ['as' => 'districts.show', 'uses'=> 'DistrictController@showMultiple']);
 });
