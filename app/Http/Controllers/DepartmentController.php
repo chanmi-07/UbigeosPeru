@@ -7,13 +7,10 @@ use Illuminate\Http\Request;
 
 class DepartmentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index(Request $request)
     {
         $departments = Department::select('code', 'name');
-        
+
         // orderBy
         $orderBy = $request->order_by ?? 'name';
         $order = $request->order ?? 'asc';
@@ -28,9 +25,9 @@ class DepartmentController extends Controller
 
         $departments = $departments->get();
 
-        foreach ($departments as $department) 
+        foreach ($departments as $department)
         {
-            $department->tag = 
+            $department->tag =
             [
                 'short' => $department->name,
                 'long' => $department->name . ', Perú',
@@ -40,25 +37,6 @@ class DepartmentController extends Controller
         return response()->json($departments);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
     public function showMultiple($codes)
     {
         $codes = explode(',', $codes);
@@ -68,9 +46,9 @@ class DepartmentController extends Controller
         ->orderBy('name', 'asc')
         ->get();
 
-        foreach ($departments as $department) 
+        foreach ($departments as $department)
         {
-            $department->tag = 
+            $department->tag =
             [
                 'short' => $department->name,
                 'long' => $department->name . ', Perú',
@@ -80,29 +58,5 @@ class DepartmentController extends Controller
         $response = count($departments) > 1 ? $departments : $departments[0];
 
         return response()->json($response);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Department $department)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Department $department)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Department $department)
-    {
-        //
     }
 }
