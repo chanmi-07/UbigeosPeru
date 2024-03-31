@@ -1,26 +1,85 @@
-# Lumen PHP Framework
+# Ubigeos Perú
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/lumen-framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
+API que puedes usar para obtener información de los departamentos, provincias y distritos del Perú.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Departamentos
+### Obtener todo
+Se puede obtener todos los datos usando `/departments`: [https://ubigeosperu.nijui.com/api/departments](https://ubigeosperu.nijui.com/api/departments)
+```js
+[
+    {
+        "code": "D-1",
+        "name": "Amazonas",
+        "tag": {
+            "short": "Amazonas",
+            "long": "Amazonas, Perú"
+        }
+    },
+    {
+        "code": "D-2",
+        "name": "Ancash",
+        "tag": {
+            "short": "Ancash",
+            "long": "Ancash, Perú"
+        }
+    },
+    ...
+]
+```
 
-> **Note:** In the years since releasing Lumen, PHP has made a variety of wonderful performance improvements. For this reason, along with the availability of [Laravel Octane](https://laravel.com/docs/octane), we no longer recommend that you begin new projects with Lumen. Instead, we recommend always beginning new projects with [Laravel](https://laravel.com).
+### Filtrar por tipo
 
-## Official Documentation
+Parámetros opcionales
+- `order_by` : is_capital (Para ordenar primero por la capital) [https://ubigeosperu.nijui.com/api/departments?order_by=is_capital](https://ubigeosperu.nijui.com/api/departments?order_by=is_capital)
+```js
+[
+    {
+        "code": "D-14",
+        "name": "Lima",
+        "tag": {
+            "short": "Lima",
+            "long": "Lima, Perú"
+        }
+    },
+    {
+        "code": "D-1",
+        "name": "Amazonas",
+        "tag": {
+            "short": "Amazonas",
+            "long": "Amazonas, Perú"
+        }
+    },
+    ...
+]
+```
+- `order`: desc (asc por defecto) [https://ubigeosperu.nijui.com/api/departments?order=desc](https://ubigeosperu.nijui.com/api/departments?order=desc)
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+```js
+[
+    {
+        "code": "D-24",
+        "name": "Ucayali",
+        "tag": {
+            "short": "Ucayali",
+            "long": "Ucayali, Perú"
+        }
+    },
+    {
+        "code": "D-23",
+        "name": "Tumbes",
+        "tag": {
+            "short": "Tumbes",
+            "long": "Tumbes, Perú"
+        }
+    },
+    ...
+]
+```
 
-## Contributing
+## Provincias
 
 Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
+## Distritos
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
