@@ -18,6 +18,7 @@ class HomeController extends Controller
                 'departments'=> route('departments.index'),
                 'provinces'=> route('provinces.index'),
                 'districts'=> route('districts.index'),
+                'more_info'=> 'https://github.com/chanmi-07/UbigeosPeru'
             ],
         ];
 
